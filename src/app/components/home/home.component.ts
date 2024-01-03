@@ -17,7 +17,6 @@ import { ToolbarComponent } from '../toolbar/toolbar.component';
 
 import { SessionService } from '../../services/session.service';
 import { SkyboxComponent } from '../skybox/skybox.component';
-import { TextDisplayComponent } from '../text-display/text-display.component';
 import { HdrLoaderService } from '../../services/hdr-loader.service';
 import { DataTexture } from 'three/src/textures/DataTexture';
 
@@ -28,7 +27,7 @@ import { DataTexture } from 'three/src/textures/DataTexture';
   imports: [
     CommonModule, RouterModule, FormsModule, ReactiveFormsModule,
     MatSidenavModule, MatButtonModule, MatIconModule, MatProgressSpinnerModule,
-    ToolbarComponent, SkyboxComponent, TextDisplayComponent
+    ToolbarComponent, SkyboxComponent,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
