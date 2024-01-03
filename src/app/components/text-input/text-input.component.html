@@ -1,0 +1,15 @@
+<mat-form-field appearance="outline" style="width: 100%; font-family: Pacifico;">
+    <mat-label>Write your text here!</mat-label>
+    <input matInput type="text" [(ngModel)]="value" (input)="updateTextService()">
+    @if(value) {
+      <button matSuffix mat-icon-button aria-label="Send" (click)="sendTokenCreation()" >
+        <mat-icon color="primary">check</mat-icon>
+      </button>
+    }
+    @if (value) {
+      <button matSuffix mat-icon-button aria-label="Clear" (click)="clearInput()">
+        <mat-icon>close</mat-icon>
+      </button>
+    }
+</mat-form-field>
+  

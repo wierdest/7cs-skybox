@@ -1,0 +1,15 @@
+<mat-drawer-container  class="home-background diagonal-stripes">
+    <app-toolbar id="toolbar" [isSessionOn]="isSessionOn" (drawerToggle)="drawer.toggle()"></app-toolbar>
+    @if(!canShowSkyBox) {
+        <div class="loading-container diagonal-stripes-reversed-small">
+            <mat-progress-spinner mode="indeterminate" color="accent"></mat-progress-spinner>
+        </div>
+    }
+    @if(canShowSkyBox) {
+        <app-skybox [hdrEquirectangularMap]="hdrTexture"></app-skybox>
+
+    }
+    <mat-drawer #drawer mode="over" class="sidenav">
+    </mat-drawer>
+</mat-drawer-container>
+  
