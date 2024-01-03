@@ -177,7 +177,7 @@ export class SkyboxComponent {
     this.textSubscription = this.textService.getText().subscribe(
       (text) => {
         this.value = text;
-        console.log(this.value);
+        // console.log(this.value);
         if (this.font) {
           if (this.textMesh) {
             this.scene.remove(this.textMesh);
