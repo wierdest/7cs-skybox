@@ -5,7 +5,6 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { ScreenSizeService } from '../../services/screen-size.service';
-import { MatDialog } from '@angular/material/dialog';
 import { TextInputComponent } from '../text-input/text-input.component';
 
 @Component({
@@ -20,8 +19,8 @@ import { TextInputComponent } from '../text-input/text-input.component';
   styleUrls: ['./toolbar.component.css']
 })
 export class ToolbarComponent implements OnDestroy {
-  toolbarLongSentence = "Seven seas ~ Confidence - Skybox!"
-  toolbarShortSentence = "Seven seas: skybox!"
+  toolbarLongSentence = "Seven seas ~ Calmness - Loose Cannon!"
+  toolbarShortSentence = "Seven seas: cannon!"
 
   currentScreenSize: string = '';
   private destroyed = new Subject<void>();
