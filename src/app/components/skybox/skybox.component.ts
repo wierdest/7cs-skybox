@@ -46,8 +46,6 @@ export class SkyboxComponent {
   private seagullAnim: THREE.AnimationClip[] | undefined;
   private seagullMixer: THREE.AnimationMixer | null = null;
 
-
-
   private initScene() {
     const container = this.el.nativeElement.querySelector('div');
 

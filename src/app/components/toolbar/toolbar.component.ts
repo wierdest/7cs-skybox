@@ -19,8 +19,8 @@ import { TextInputComponent } from '../text-input/text-input.component';
   styleUrls: ['./toolbar.component.css']
 })
 export class ToolbarComponent implements OnDestroy {
-  toolbarLongSentence = "Seven seas ~ Calmness - Loose Cannon!"
-  toolbarShortSentence = "Seven seas: cannon!"
+  toolbarLongSentence = "Seven seas ~ Confidence - Skybox!"
+  toolbarShortSentence = "Seven seas: skybox!"
 
   currentScreenSize: string = '';
   private destroyed = new Subject<void>();
